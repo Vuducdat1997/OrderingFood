@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'OrdingFood' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'SwiftCharts', '~> 0.6.5'
+  pod 'CardTabBar'
+  pod 'SwiftyJSON'
+  pod 'Moya', '~> 14.0'
+  pod 'GoogleMaps', '4.2.0'
+  pod 'RxSwift', '6.2.0'
+  pod 'RxCocoa', '6.2.0'
+  pod 'Nuke', '~> 9.0'
+  pod 'HHFloatingView'
+  pod 'Floaty', '~> 4.2.0'
+ 
+  # Pods for OrdingFood
+
+end

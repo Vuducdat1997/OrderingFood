@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="popularcell" id="gTV-IL-0wX" customClass="PopularCollectionViewCell" customModule="OrdingFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRv-PZ-fY2">
+                        <rect key="frame" x="0.0" y="0.0" width="164" height="220"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47M-IL-5Jw">
+                                <rect key="frame" x="0.0" y="198.5" width="164" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvd-7q-5Gd">
+                                <rect key="frame" x="0.0" y="0.0" width="164" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pau-RI-p1v">
+                                <rect key="frame" x="2" y="21.5" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="3fx-AY-VqY"/>
+                                    <constraint firstAttribute="width" constant="160" id="zFU-9z-xc3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30.000 VND" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpC-wX-hQ6">
+                                <rect key="frame" x="0.0" y="181.5" width="164" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.036709969359999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pau-RI-p1v" firstAttribute="top" secondItem="Dvd-7q-5Gd" secondAttribute="bottom" id="1CJ-PI-e6p"/>
+                            <constraint firstItem="pau-RI-p1v" firstAttribute="leading" secondItem="KRv-PZ-fY2" secondAttribute="leading" constant="2" id="3Y3-DG-NSd"/>
+                            <constraint firstAttribute="width" constant="164" id="9tF-QU-ufF"/>
+                            <constraint firstItem="tpC-wX-hQ6" firstAttribute="leading" secondItem="KRv-PZ-fY2" secondAttribute="leading" id="GJA-9U-sDb"/>
+                            <constraint firstItem="47M-IL-5Jw" firstAttribute="leading" secondItem="KRv-PZ-fY2" secondAttribute="leading" id="KIl-Ro-WjX"/>
+                            <constraint firstAttribute="trailing" secondItem="tpC-wX-hQ6" secondAttribute="trailing" id="KuQ-cx-DC9"/>
+                            <constraint firstAttribute="trailing" secondItem="pau-RI-p1v" secondAttribute="trailing" constant="2" id="LEu-Rr-Bpv"/>
+                            <constraint firstItem="Dvd-7q-5Gd" firstAttribute="leading" secondItem="KRv-PZ-fY2" secondAttribute="leading" id="N8T-Gz-gU3"/>
+                            <constraint firstAttribute="trailing" secondItem="Dvd-7q-5Gd" secondAttribute="trailing" id="Zrb-vO-aGb"/>
+                            <constraint firstAttribute="trailing" secondItem="47M-IL-5Jw" secondAttribute="trailing" id="e4k-UN-3tx"/>
+                            <constraint firstItem="47M-IL-5Jw" firstAttribute="top" secondItem="tpC-wX-hQ6" secondAttribute="bottom" id="exR-6O-Fvl"/>
+                            <constraint firstItem="Dvd-7q-5Gd" firstAttribute="top" secondItem="KRv-PZ-fY2" secondAttribute="top" id="gDR-Qv-jWs"/>
+                            <constraint firstItem="tpC-wX-hQ6" firstAttribute="top" secondItem="pau-RI-p1v" secondAttribute="bottom" id="gpc-p9-3Fj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="KRv-PZ-fY2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VGw-yn-Tii"/>
+                <constraint firstAttribute="trailing" secondItem="KRv-PZ-fY2" secondAttribute="trailing" id="Vw4-uL-UOA"/>
+                <constraint firstAttribute="bottom" secondItem="KRv-PZ-fY2" secondAttribute="bottom" id="WWa-5l-xzi"/>
+                <constraint firstItem="KRv-PZ-fY2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="li0-Xn-f7L"/>
+            </constraints>
+            <size key="customSize" width="164" height="220"/>
+            <connections>
+                <outlet property="image" destination="pau-RI-p1v" id="RCi-ek-aUi"/>
+                <outlet property="name" destination="47M-IL-5Jw" id="koH-ju-dD8"/>
+                <outlet property="price" destination="tpC-wX-hQ6" id="tEN-yA-rnu"/>
+                <outlet property="title" destination="Dvd-7q-5Gd" id="bww-Of-Zob"/>
+                <outlet property="view" destination="KRv-PZ-fY2" id="P40-kJ-IjL"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="-86.383928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

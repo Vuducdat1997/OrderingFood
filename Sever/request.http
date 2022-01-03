@@ -1,0 +1,129 @@
+POST  http://localhost:5000/api/auth/register
+content-Type: application/json
+
+
+{
+    "username": "dat123",
+    "password": "123456"
+}
+
+
+###
+POST  http://localhost:5000/api/auth/login
+content-Type: application/json
+
+
+{
+    "username": "dat221",
+    "password": "1d414124sa213d"
+}
+
+###
+POST  http://localhost:5000/api/posts
+content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWEzZDJkNTQ3ZjI4NTA2ZGMxYmNhYzEiLCJpYXQiOjE2MzgxMjYyOTN9.4eNGfZJ7YMm7ajQRRIraxoPeFrKFsniPQlGv-8VzRDk
+
+
+{
+    "title":"TEST",
+    "description": "abc",
+    "url": "react.com",
+    "status": "TO LEARN"
+}
+
+
+###
+GET  http://localhost:5000/api/posts
+content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWEzZDJkNTQ3ZjI4NTA2ZGMxYmNhYzEiLCJpYXQiOjE2MzgxMjYyOTN9.4eNGfZJ7YMm7ajQRRIraxoPeFrKFsniPQlGv-8VzRDk
+
+{
+    "title":"my first",
+    "description": "abc",
+    "url": "react.com",
+    "status": "TO LEARN"
+}
+
+###
+PUT  http://localhost:5000/api/posts/61a3d2e147f28506dc1bcac3
+content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWEzZDJkNTQ3ZjI4NTA2ZGMxYmNhYzEiLCJpYXQiOjE2MzgxMjYyOTN9.4eNGfZJ7YMm7ajQRRIraxoPeFrKFsniPQlGv-8VzRDk
+
+
+{
+    "title": "Vue",
+    "description": "VUEEEEEE",
+    "url" : "vue.org",
+    "status": "LEARNING"
+}
+
+###
+DELETE   http://localhost:5000/api/posts/61a3d2e147f28506dc1bcac3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWEzZDJkNTQ3ZjI4NTA2ZGMxYmNhYzEiLCJpYXQiOjE2MzgxMjYyOTN9.4eNGfZJ7YMm7ajQRRIraxoPeFrKFsniPQlGv-8VzRDk
+
+
+### 
+GET  http://localhost:5000/api/supplier
+
+###
+post http://localhost:5000/api/supplier/getSupplier
+content-Type: application/json
+
+{
+    "id" : "61bf4e6cc764a266b1e4ff44"
+}
+
+### 
+POST http://localhost:5000/api/supplier
+content-Type: application/json
+
+
+{
+    "name" : "Dat2",
+    "title": "Vue",
+    "address": "VUEEEEEE",
+    "contact" : "vue.org",
+    "bannerUrl": "LEARNING",
+    "iconUrl":"iconUrl"
+}
+
+### 
+GET  http://localhost:5000/api/product
+
+
+
+### 
+Post  http://localhost:5000/api/product
+content-Type: application/json
+
+{
+    "name" : "Banh",
+    "title": "Banh My",
+    "price": "32000",
+    "url" : "vue.org",
+    "type": "LEARNING",
+    "order":"iconUrl",
+    "supplierId":"61bf4e6cc764a266b1e4ff44"
+}
+
+### 
+Post  http://localhost:5000/api/product/getProduct
+content-Type: application/json
+
+{
+    "id": "61bf55f58d923dae82b5f8b5"
+}
+
+### 
+GET  http://localhost:5000/api/category
+
+###
+Post  http://localhost:5000/api/category
+content-Type: application/json
+
+{
+    "name": "Bún/Phở",
+    "type": 1,
+    "status":1,
+    "urlIcon":"url"
+}
